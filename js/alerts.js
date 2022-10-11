@@ -43,3 +43,9 @@ for(let i = 0 ; i < cantidadInscriptos; i = i + 1){
         alert("Esa actividad no se encuentra disponible, por favor selecciona otra disponible")
     }
 }
+
+let input = document.querySelector('.input');
+let result = document.querySelector('#result');
+input.addEventListener('change', function () {
+    result.textContent =this.value;
+});
