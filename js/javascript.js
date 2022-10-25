@@ -44,8 +44,34 @@ for(let i = 0 ; i < cantidadInscriptos; i = i + 1){
     }
 }
 
+var l = localStorage;
+
 let input = document.querySelector('.input');
 let result = document.querySelector('#result');
 input.addEventListener('change', function () {
     result.textContent =this.value;
-});
+})
+
+first_name.addEventListener("focusOut", function(){
+    l.setItem("fn", first_name.value);
+})
+
+last_name.addEventListener("focusOut", function(){
+    l.setItem("ln", last_name.value);
+})
+
+phone.addEventListener("focusOut", function(){
+    l.setItem("ph", phone.value);
+})
+
+email.addEventListener("focusOut", function(){
+    l.setItem("em", phone.value);
+})
+
+function recuperarValores(){
+    first_name.value = l.getItem("fn");
+    last_name.value = l.getItem("ln");
+    phone.value = l.getItem("ph");
+    email.value = l.getItem("em");
+}
+document.addEventListener("DOMContentLoader", recuperarValores);

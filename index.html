@@ -10,11 +10,37 @@
 <body>
     <h1>My gym</h1>
     <h3>Este es el sitio de mi gimnasio donde estan todas mis actividades y se pueden realizar inscripciones online</h3>
-    <label for="message">Ingrese la actividad que desee inscribirse</label>
-    <input type="text" class="input" id="message" name="message">
-    <button>Aceptar</button>
-    <p id="result"></p>
-    
+    <div class="form">
+        <label class="text-1" for="message">Ingrese la actividad que desee inscribirse</label>
+        <input type="text" class="input" id="message" name="message">
+        <button>Aceptar</button>
+        <p id="result"></p>
+    </div>    
+    <div class="form">
+        <h4 class="center">Ingrese sus datos</h4>
+            <div>
+                <form>
+                    <div>
+                        <div class="mt5">
+                            <input placeholder="Nombre" id="first_name" type="text" class="validate">
+                        </div>
+                        <div class="mt5">
+                            <input placeholder="Apellido" id="last_name" type="text" class="validate">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="mt5">
+                            <input placeholder="Telefono" id="phone" type="number" class="validate">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="mt5">
+                            <input placeholder="Correo electrónico" id="email" type="email" class="validate">
+                        </div>
+                    </div>      
+                </form>
+            </div>
+    </div>
     <script src="js/javascript.js"></script>
 </body>
 </html>
