@@ -1,46 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ecommerce Website - Shopping Cart</title>
     <link rel="stylesheet" href="/style/estilos.css">
-    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
-    <h1>My gym</h1>
-    <h3>Este es el sitio de mi gimnasio donde estan todas mis actividades y se pueden realizar inscripciones online</h3>
-    <div class="form">
-        <label class="text-1" for="message">Ingrese la actividad que desee inscribirse</label>
-        <input type="text" class="input" id="message" name="message">
-        <button>Aceptar</button>
-        <p id="result"></p>
-    </div>    
-    <div class="form">
-        <h4 class="center">Ingrese sus datos</h4>
-            <div>
-                <form>
-                    <div>
-                        <div class="mt5">
-                            <input placeholder="Nombre" id="first_name" type="text" class="validate">
-                        </div>
-                        <div class="mt5">
-                            <input placeholder="Apellido" id="last_name" type="text" class="validate">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="mt5">
-                            <input placeholder="Telefono" id="phone" type="number" class="validate">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="mt5">
-                            <input placeholder="Correo electrónico" id="email" type="email" class="validate">
-                        </div>
-                    </div>      
-                </form>
+	<header>
+        <div class="nav container">
+            <a href="#" class="logo">Sport Shop</a>
+            <!--<i class='bx bx-shopping-bag' id="cart-icon"></i>-->
+            <i class='bx bx-cart-alt' id="cart-icon"></i>
+            <!--Contenido-->
+            <div class="cart">
+                <h2 class="cart-title">Tus Compras</h2>
+                <!--Compra-->
+                <div class="cart-content">
+                </div>
+                <!--Total-->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <!--Boton Comprar-->
+                <button type="button" class="btn-buy">Comprar</button>
+                <!--Terminar Compra-->
+                <i class='bx bx-x' id="close-cart"></i>
+
             </div>
-    </div>
+        </div>
+    </header>
+    <section class="shop container">
+        <h2 class="section-title">Nuestros Suplementos Deportivos</h2>
+
+        <div class="shop-content">
+            <!--Producto 1 -->
+            <div class="product-box">
+                <img src="img/ColagenoPolvo.png" alt="" class="product-img">
+                <h2 class="product-title">COLAGENO POLVO</h2>
+                <span class="price">$3500</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--Producto 2 -->
+            <div class="product-box">
+                <img src="Img/CreatinaMicronizada.png" alt="" class="product-img">
+                <h2 class="product-title">CREATINA MICRONIZADA</h2>
+                <span class="price">$7799</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--Producto 3 -->
+            <div class="product-box">
+                <img src="Img/LipoStackBlackII.png" alt="" class="product-img">
+                <h2 class="product-title">ULTRA TECH LIPO STACK BLACK II</h2>
+                <span class="price">$5855</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--Producto 4 -->
+            <div class="product-box">
+                <img src="Img/ProteinaVegetalVeganos.png" alt="" class="product-img">
+                <h2 class="product-title">PROTEINA VEGETAL VEGANOS</h2>
+                <span class="price">$3307</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--Producto 5 -->
+            <div class="product-box">
+                <img src="Img/ReloadPolvo.png" alt="" class="product-img">
+                <h2 class="product-title">SUPLEMENTO DEPORTIVO RELOAD POLVO</h2>
+                <span class="price">$2970</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--Producto 6 -->
+            <div class="product-box">
+                <img src="Img/SuplementoDietarioAmpkProtein.png" alt="" class="product-img">
+                <h2 class="product-title">SUPLEMENTO DIETARIO AMPK PROTEIN</h2>
+                <span class="price">$2760</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--Producto 7 -->
+            <div class="product-box">
+                <img src="Img/UltraMassVainilla.png" alt="" class="product-img">
+                <h2 class="product-title">SUPLEMENTO DIETARIO ULTRA MASS VAINILLA</h2>
+                <span class="price">$5399</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--Producto 8 -->
+            <div class="product-box">
+                <img src="Img/WheyProteinDoubleRich.png" alt="" class="product-img">
+                <h2 class="product-title">SUPLEMENTO DIETARIO WHEY PROTEIN DOUBLE RICH</h2>
+                <span class="price">$7499</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </div>
+    </section>
     <script src="js/javascript.js"></script>
 </body>
 </html>
